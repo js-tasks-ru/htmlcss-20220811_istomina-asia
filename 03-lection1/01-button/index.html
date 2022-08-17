@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./button.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./button.css">
+    <style>
+        body button {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Enabled</h3>
+    <button class="button button_primary">primary</button>
+    <button class="button button_secondary">secondary</button>
+    <button class="button button_alternate">alternate</button>
+    
+    <br />
+    <h3>Disabled</h3>
+    <button disabled class="button button_primary button_disabled">primary</button>
+    <button disabled class="button button_secondary button_disabled">secondary</button>
+    <button disabled class="button button_alternate button_disabled">alternate</button>
+
+
+</body>
+
 </html>
