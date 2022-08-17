@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+    <style>
+        body {
+            padding: 30px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Accordion</h1>
+    <div class="accordion">
+        <details class="accordion__item">
+            <summary class="accordion__summary">
+                Завтрак
             </summary>
-            <p>
-                Hidden content
+            <p class="accordion__content">
+                Каша с маслом, бутерброд с колбасой и кофе
             </p>
         </details>
-    </body>
+        <details class="accordion__item">
+            <summary class="accordion__summary">
+                Обед
+            </summary>
+            <p class="accordion__content">
+               Суп с хлебом, котлета, пюре, огурец и компот
+            </p>
+        </details>
+        <details class="accordion__item">
+            <summary class="accordion__summary">
+                Ужин
+            </summary>
+            <p class="accordion__content">
+                Тост, яблоко и кефир
+            </p>
+        </details>
+    </div>
+
+</body>
+
 </html>
