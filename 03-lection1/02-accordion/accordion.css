@@ -1,16 +1,17 @@
 .accordion__item {
     border: 1px solid var(--grey-3);
-    font-size: 1.1rem;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    font-size: 17px;
     border-radius: 8px;
     padding: 24px 32px 32px;
-    width: 730px;
     box-sizing: border-box;
 }
 
 .accordion__summary {
-    color: black;
-    font-weight: 400;
+    color: var(--black);
+    list-style: none;
 }
+
 
 .accordion__content {
     color: var(--grey-4);
@@ -20,6 +21,10 @@
 
 .accordion__item {
     margin-bottom: 8px;
+}
+
+.accordion__summary:hover {
+    cursor: pointer;
 }
 
 .accordion__item:last-child {
