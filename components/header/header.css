@@ -1,0 +1,9 @@
+.header {
+    padding: 20px 30px;
+    background-color: var(--grey-1);
+    border-bottom: 2px solid var(--grey-2);
+}
+
+.header__title {
+    margin: 0;
+}

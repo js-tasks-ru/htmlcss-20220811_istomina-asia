@@ -17,33 +17,15 @@
     flex-shrink: 0;
 }
 
-.header {
-    padding: 20px 30px;
-    background-color: var(--grey-1);
-    border-bottom: 2px solid var(--grey-2);
-}
 
-.main {
-    background-color: var(--grey-1);
-}
 
-.footer {
-    background-color: var(--grey-1);
-    border-top: 2px solid var(--grey-2);
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    padding: 20px 30vw;
-    text-align: center;
-}
 
-.header__title {
-    margin: 0;
-}
 
-.footer__title {
-    margin: 0;
-}
+
+
+
+
+
 
 
 .title_size_3 {
