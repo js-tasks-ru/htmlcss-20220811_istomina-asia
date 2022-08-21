@@ -17,17 +17,10 @@
     flex-shrink: 0;
 }
 
+.title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
 
-
-
-
-
-
-
-
-
-
-
-.title_size_3 {
+.title_size_small {
     font-size: 1.4rem;
 }
