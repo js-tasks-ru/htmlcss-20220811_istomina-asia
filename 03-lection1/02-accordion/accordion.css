@@ -3,11 +3,12 @@
     font-family: 'Inter', 'Roboto', Arial, sans-serif;
     font-size: 17px;
     border-radius: 8px;
-    padding: 24px 32px 32px;
+    padding: 0px 32px;
     box-sizing: border-box;
 }
 
 .accordion__summary {
+    padding: 24px 0;
     color: var(--black);
     list-style: none;
 }
@@ -21,6 +22,14 @@
 
 .accordion__item {
     margin-bottom: 8px;
+}
+
+.accordion__item[open] {
+     padding-bottom: 24px
+}
+
+.accordion__item[open]  .accordion__summary{
+    padding-bottom: 0;
 }
 
 .accordion__summary:hover {
