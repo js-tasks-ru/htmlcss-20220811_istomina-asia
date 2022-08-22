@@ -8,7 +8,7 @@
     display: flex;
     justify-items: flex-start;
     align-items: stretch;
-    gap: 10px;
+    gap: 8px;
 }
 
 .skeleton__avatar {
@@ -24,20 +24,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 
 .skeleton__line {
-    min-height: 20px;
+    height: 20px;
     background: linear-gradient(0.25turn, var(--grey-3), var(--grey-2), var(--grey-3));
 }
 
 .skeleton__content {
-    padding-top: 25px;
+    margin-top: 24px;
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-direction: column;
 }
 
