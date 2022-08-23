@@ -1,0 +1,12 @@
+.title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.title_size_large {
+    font-size: 36px;
+}
+
+.title_size_small {
+    font-size: 20px;
+}
