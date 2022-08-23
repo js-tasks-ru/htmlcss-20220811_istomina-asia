@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <!-- Страница со скелетоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./skeleton.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./skeleton.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        body>div {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>skeleton</h1>
+    <div class="skeleton">
+        <div class="skeleton__header">
+            <div class="skeleton__avatar"></div>
+            <div class="skeleton__details">
+                <div class="skeleton__line skeleton__line_size_small"></div>
+                <div class="skeleton__line skeleton__line_size_medium"></div>
+            </div>
+        </div>
+        <div class="skeleton__content">
+            <div class="skeleton__line skeleton__line_size_large"></div>
+            <div class="skeleton__line skeleton__line_size_large"></div>
+        </div>
+    </div>
+</body>
+
 </html>
