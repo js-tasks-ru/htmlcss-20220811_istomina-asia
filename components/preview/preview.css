@@ -1,0 +1,14 @@
+.preview {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: stretch;
+    align-content: flex-start;
+    max-width: 2100px;
+}
+
+.preview__item {
+    flex-basis: 350px;
+    flex-grow: 1;
+}

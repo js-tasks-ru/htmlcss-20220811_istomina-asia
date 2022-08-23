@@ -1,0 +1,20 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page__header {
+    flex-shrink: 0;
+}
+
+.page__main {
+    flex-grow: 1;
+}
+
+.page__footer {
+    flex-shrink: 0;
+}
+

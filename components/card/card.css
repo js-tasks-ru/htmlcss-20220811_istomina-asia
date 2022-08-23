@@ -1,0 +1,15 @@
+.card {
+    padding: 80px 30px 25px;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    height: 367px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card__title {   
+    align-self: center;
+}
