@@ -14,7 +14,7 @@
 .tooltip__helper {
     display: none;
     position: absolute;
-    top: calc(100% + 10px);
+    bottom: calc(100% + 10px);
     left: 12px;
     transform: translateX(-50%);
     padding: 13px 21px;
@@ -32,9 +32,9 @@
 .tooltip__helper:before {
     content: '';
     border: 10px solid transparent;
-    border-bottom: 10px solid var(--blue);
+    border-top: 10px solid var(--blue);
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
