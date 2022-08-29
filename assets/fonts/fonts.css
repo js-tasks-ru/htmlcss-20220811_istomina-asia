@@ -8,3 +8,21 @@
     src: local("Inter"),
          url("Inter-Regular.ttf") 
   }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+  
+    src: local("Inter"),
+         url("Inter-SemiBold.ttf") 
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+  
+    src: local("SourseSansPro"),
+         url("SourceSansPro-Regular.ttf")
+  }
