@@ -1,16 +1,19 @@
 .accordion__item {
     border: 1px solid var(--grey-3);
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     border-radius: 8px;
     padding: 0px 32px;
     box-sizing: border-box;
+    position: relative;
+
 }
 
 .accordion__summary {
     padding: 24px 0;
     color: var(--black);
     list-style: none;
+    
 }
 
 
@@ -38,6 +41,13 @@
 
 .accordion__item:last-child {
     margin-bottom: 0;
+}
+
+.accordion__arrow {
+    color: var(--grey-3); 
+    position: absolute;
+    top: 32px;
+    right: 32px;
 }
 
 
