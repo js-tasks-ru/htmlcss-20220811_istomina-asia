@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <!-- Страница с аватаром -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./avatar.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./avatar.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+        .avatars {
+            display: grid;
+            width: 30%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: max-content max-content;
+            grid-auto-flow: column;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Avatar</h1>
+    <div class="avatars">
+        <h3>offline</h3>
+        <div class="avatar">
+            <div class="avatar__wrapper">
+                <img src="./public/avatar-200.jpg" alt="дядя" class="avatar__image">
+            </div>
+            <div class="avatar__indicator avatar__indicator_status_offline"></div>
+        </div>
+        <h3>online</h3>
+        <div class="avatar">
+            <div class="avatar__wrapper">
+                <img src="./public/avatar-200.jpg" alt="дядя онлайн" class="avatar__image">
+            </div>
+            <div class="avatar__indicator avatar__indicator_status_online"></div>
+        </div>
+    </div>
+    
+
+</body>
+
 </html>
