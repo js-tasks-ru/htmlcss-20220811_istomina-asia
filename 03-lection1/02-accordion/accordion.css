@@ -11,6 +11,7 @@
     padding: 24px 0;
     color: var(--black);
     list-style: none;
+    position: relative;
 }
 
 
@@ -25,10 +26,10 @@
 }
 
 .accordion__item[open] {
-     padding-bottom: 24px
+    padding-bottom: 24px
 }
 
-.accordion__item[open]  .accordion__summary{
+.accordion__item[open] .accordion__summary {
     padding-bottom: 0;
 }
 
@@ -40,7 +41,24 @@
     margin-bottom: 0;
 }
 
+.accordion__arrow {
+    color: var(--grey-3);
+    position: absolute;
+    top: 33px;
+    right: 1px;
+    width: 18px;
+    height: 10px;
+}
 
-.accordion__summary::-webkit-details-marker{display:none;}
-.accordion__summary::-moz-list-bullet{list-style-type:none;}
-.accordion__summary::marker{display:none;} 
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__summary::-moz-list-bullet {
+    list-style-type: none;
+}
+
+.accordion__summary::marker {
+    display: none;
+}
