@@ -4,8 +4,56 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+            body {
+                padding: 30px;
+            }
+        </style>
     </head>
     <body>
+        <form>
+        <h1>Checkbox</h1>
+        <label for="radio-1" class="radio">
+            <input type="radio"  name="radio"  id="radio-1"class="radio__input">
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon">
+                        <use href="../../assets/images/sprites.svg#circle"></use>
+                    </svg>
+                </div>
+                <div class="radio__label">Default-1</div>
+            </div>
+            
+        </label>
+        <br>
+        <br>
+        <label for="radio-2" class="radio">
+            <input type="radio" name="radio" id="radio-2" class="radio__input">
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon">
+                        <use href="../../assets/images/sprites.svg#circle"></use>
+                    </svg>
+                </div>
+                <div class="radio__label">Default-2</div>
+            </div>
+            
+        </label>
+        <br>
+        <br>
+        <label for="radio-3" class="radio">
+            <input disabled type="radio" name="radio" id="radio-3" class="radio__input">
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon">
+                        <use href="../../assets/images/sprites.svg#circle"></use>
+                    </svg>
+                </div>
+                <div class="radio__label">Disabled</div>
+            </div>
+            
+        </label>
+    </form>
 
     </body>
 </html>
