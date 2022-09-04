@@ -1,0 +1,71 @@
+.input {
+    font-family: 'Inter';
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    user-select: none;
+}
+
+.input::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 40px;
+    right: 18px;
+}
+
+.input__input {
+    display: block;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    outline: none;
+    border-radius: 8px;
+    padding: 17px 24px 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+    text-transform: capitalize;
+}
+
+.input__input:focus {
+    border-color: var(--blue);
+}
+
+.input__input:disabled {
+    cursor: auto;
+    pointer-events: none;
+}
+
+.input_state_error input, .input_state_error input:focus {
+    border-color: var(--red);
+}
+
+.input_state_success input, .input_state_success input:focus {
+    border-color: var(--blue);
+}
+
+.input_state_error::after {
+    display: block;
+    background-image: url(../../assets/images/alert-triangle.svg);
+}
+
+.input_state_success::after {
+    display: block;
+    background-image: url(../../assets/images/check-circle.svg);
+}
+
+.input ::placeholder {
+    color: var(--grey-2);
+}
