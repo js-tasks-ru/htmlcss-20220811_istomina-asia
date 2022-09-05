@@ -3,3 +3,28 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
 }
+
+.component-page__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.component-page__anchor {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.component-page__anchor_status_current {
+color: var(--red)
+}
+
+.component-page__anchor_to_main {
+    padding-top: 30px;
+}
