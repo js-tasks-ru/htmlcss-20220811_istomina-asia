@@ -1,0 +1,32 @@
+.avatar {
+    width: 102px;
+    height: 102px;
+    position: relative;
+}
+
+.avatar__image {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar__indicator {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    height: 18px;
+    width: 18px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.avatar__indicator_status_offline {
+   display: none;
+}
+
+.avatar__indicator_status_online {
+    border: 2px solid var(--white);
+    background-color: var(--purple);
+}
