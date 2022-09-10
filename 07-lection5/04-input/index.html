@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-        <style>
-            body {
-                padding: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Inputs</h1>
 
-        <label for="input" class="input">
-            Default
-            <input type="text" id="input" class="input__input" placeholder="placeholder">
-        </label>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
 
-        <br>
-        <br>
+<body>
+    <h1>Inputs</h1>
+<div class="input">
+    <label for="input" class="input__label">
+        Default
+    </label>
 
-        <label for="input1" class="input input_state_success">
-            Success
-            <input type="text" id="input1" class="input__input" placeholder="placeholder">
-        </label>
+        <input type="text" id="input" class="input__input" placeholder="placeholder">
+</div>
+    
 
-        <br>
-        <br>
+    <br>
+    <br>
+<div class="input input_state_success">
+    <label for="input1" class="input__label">
+        Success
+    </label>
+    <input type="text" id="input1" class="input__input input__input_state_success" placeholder="placeholder">
+</div>
+    
 
-        <label for="input2" class="input input_state_error">
-            Error
-            <input type="text" id="input2" class="input__input" placeholder="placeholder">
-        </label>
 
-        <br>
-        <br>
+    <br>
+    <br>
+<div class="input input_state_error">
+    <label for="input2" class="input__label">
+        Error
+    </label>
+    <input type="text" id="input2" class="input__input input__input_state_error" placeholder="placeholder">
+</div>
+    
 
-        <label for="input3" class="input">
-            Disabled
-            <input type="text" disabled id="input3" class="input__input" placeholder="placeholder">
-        </label>
 
-    </body>
+    <br>
+    <br>
+<div class="input">
+    <label for="input3" class="input__label">
+        Disabled
+    </label>
+    <input type="text" disabled id="input3" class="input__input" placeholder="placeholder">
+</div>
+   
+
+
+</body>
+
 </html>

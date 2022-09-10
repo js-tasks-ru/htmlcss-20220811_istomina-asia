@@ -1,7 +1,7 @@
 .input {
+    position: relative;
     font-family: 'Inter';
     display: inline-block;
-    position: relative;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -10,6 +10,11 @@
     text-transform: uppercase;
     color: var(--grey-3);
     user-select: none;
+}
+
+.input__label {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .input::after {
@@ -23,7 +28,6 @@
 
 .input__input {
     display: block;
-    margin-top: 5px;
     box-sizing: border-box;
     background: var(--white);
     border: 1px solid var(--grey-2);
@@ -48,24 +52,23 @@
     pointer-events: none;
 }
 
-.input_state_error input, .input_state_error input:focus {
+.input__input_state_error, .input__input_state_error:focus {
     border-color: var(--red);
 }
 
-.input_state_success input, .input_state_success input:focus {
+.input__input_state_success, .input__input_state_success:focus {
     border-color: var(--blue);
 }
 
 .input_state_error::after {
-    display: block;
     background-image: url(../../assets/images/alert-triangle.svg);
 }
 
 .input_state_success::after {
-    display: block;
     background-image: url(../../assets/images/check-circle.svg);
 }
 
-.input ::placeholder {
+.input__input::placeholder {
     color: var(--grey-2);
 }
+
