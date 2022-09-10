@@ -16,6 +16,10 @@
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../04-lection2/02-skeleton/skeleton.css';
 
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../05-lection3/02-modal/modal.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+
 @import '../../components/component-page/component-page.css';
 
 :root {
@@ -56,7 +60,7 @@ main {
 
 .container {
     max-width: 1110px;
-    width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 0 16px;
 }
