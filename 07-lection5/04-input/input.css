@@ -1,5 +1,4 @@
 .input {
-    position: relative;
     display: inline-block;
     color: var(--grey-3);
     user-select: none;
@@ -17,13 +16,17 @@
     text-transform: uppercase;
 }
 
+.input__wrapper {
+    position: relative;
+}
+
 
 .input__wrapper::after {
     content: "";
     width: 24px;
     height: 24px;
     position: absolute;
-    top: 40px;
+    top: 18px;
     right: 18px;
 }
 
@@ -52,11 +55,13 @@
     pointer-events: none;
 }
 
-.input_state_error .input__input, .input_state_error  .input__input:focus {
+.input_state_error .input__input,
+.input_state_error .input__input:focus {
     border-color: var(--red);
 }
 
-.input_state_success .input__input, .input_state_success  .input__input:focus {
+.input_state_success .input__input,
+.input_state_success .input__input:focus {
     border-color: var(--blue);
 }
 
@@ -71,4 +76,3 @@
 .input__input::placeholder {
     color: var(--grey-2);
 }
-
