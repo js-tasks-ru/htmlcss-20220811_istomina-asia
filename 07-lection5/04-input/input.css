@@ -1,0 +1,78 @@
+.input {
+    display: inline-block;
+    color: var(--grey-3);
+    user-select: none;
+}
+
+.input__label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.input__wrapper {
+    position: relative;
+}
+
+
+.input__wrapper::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.input__input {
+    box-sizing: border-box;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    color: var(--grey-4);
+    outline: none;
+    padding: 17px 24px 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.input__input:focus {
+    border-color: var(--blue);
+}
+
+.input__input:disabled {
+    cursor: auto;
+    pointer-events: none;
+}
+
+.input_state_error .input__input,
+.input_state_error .input__input:focus {
+    border-color: var(--red);
+}
+
+.input_state_success .input__input,
+.input_state_success .input__input:focus {
+    border-color: var(--blue);
+}
+
+.input_state_error .input__wrapper::after {
+    background-image: url(../../assets/images/alert-triangle.svg);
+}
+
+.input_state_success .input__wrapper::after {
+    background-image: url(../../assets/images/check-circle.svg);
+}
+
+.input__input::placeholder {
+    color: var(--grey-2);
+}

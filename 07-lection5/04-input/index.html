@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        body {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Inputs</h1>
+    <div class="input">
+        <label for="input" class="input__label">
+            Default
+        </label>
+        <div class="input__wrapper">
+            <input type="text" id="input" class="input__input" placeholder="placeholder">
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <div class="input input_state_success">
+        <label for="input1" class="input__label">
+            Success
+        </label>
+        <div class="input__wrapper">
+            <input type="text" id="input1" class="input__input" placeholder="placeholder">
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <div class="input input_state_error">
+        <label for="input2" class="input__label">
+            Error
+        </label>
+        <div class="input__wrapper">
+            <input type="text" id="input2" class="input__input" placeholder="placeholder">
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <div class="input">
+        <label for="input3" class="input__label">
+            Disabled
+        </label>
+        <div class="input__wrapper">
+            <input type="text" disabled id="input3" class="input__input" placeholder="placeholder">
+        </div>
+    </div>
+
+
+
+</body>
+
 </html>
