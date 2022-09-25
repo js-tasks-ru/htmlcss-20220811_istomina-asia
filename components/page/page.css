@@ -8,10 +8,12 @@
 
 .page__header {
     flex-shrink: 0;
+    min-height: 82px;
 }
 
 .page__main {
     flex-grow: 1;
+    background-color: var(--grey-1);
 }
 
 .page__footer {
